@@ -1,6 +1,16 @@
 import 'dart:io';
 
-enum color { black, red, green, yellow, blue, magenta, cyan, white }
+enum color {
+  black,
+  red,
+  green,
+  yellow,
+  blue,
+  magenta,
+  cyan,
+  white,
+  redAndYellow
+}
 
 final Map<color, String> colorPicker = {
   color.black: "90",
@@ -38,6 +48,11 @@ void printTrafficLight(String text, var myColor) {
       print("| ${trafficLight[color.white]} |");
       print("| ${trafficLight[color.white]} |");
       print("| ${trafficLight[color.green]} |");
+
+    case color.redAndYellow:
+      print("| ${trafficLight[color.red]} |");
+      print("| ${trafficLight[color.yellow]} |");
+      print("| ${trafficLight[color.white]} |");
     default:
       print("\x1B[" +
           colorPicker[color.red]! +
