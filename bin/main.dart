@@ -4,7 +4,6 @@ import 'dart:io';
 void main() {
   while (true) {
     carsCrossUser();
-    //carsAndUser();
   }
 }
 
@@ -73,28 +72,4 @@ void carsCrossUser() {
   printTrafficLight("Cars 🚙 ⏹️", color.red);
   printUserLight("User 🧍‍♀️🧍", color.red);
   sleep(Duration(seconds: 2));
-}
-
-void carsAndUser() {
-  printTrafficLight("Cars 🚗 ⏪️", color.green);
-  printUserLight("User 🧍‍♀️🧍", color.red);
-  sleep(Duration(seconds: 3));
-
-  printTrafficLight("Cars 🚗 ⏪️", color.yellow);
-  printUserLight("User 🧍‍♀️🧍", color.red);
-  sleep(Duration(seconds: 2));
-
-  printTrafficLight("Cars 🚗 ⏹️", color.red);
-  printUserLight("User 🧍‍♀️🧍", color.red);
-  sleep(Duration(seconds: 3));
-
-  printTrafficLight("Cars 🚗 ⏹️", color.red);
-  printUserLight("User 🧍‍♀️🧍", color.red);
-  sleep(Duration(seconds: 3));
-
-  printTrafficLight("Cars 🚗 ⏪️", color.yellow);
-  printUserLight("User 🧍‍♀️🧍", color.red);
-  sleep(Duration(seconds: 2));
-
-  printUserLight("User 🏃‍♀️‍➡️🏃‍➡️", color.green);
 }
